@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MyMovie - My Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 MyMovie</h1>
+
+        <nav>
+            <a href="index.html">Discover Movies</a>
+            <a href="watchlist.html" class="active">
+                My Watchlist
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>✮ My Watchlist ✮</h2>
+
+        <p>
+            Keep track of movies you want to watch
+            and movies you have already watched.
+        </p>
+
+        <section class="watchlist-stats">
+            <div class="stat-card">
+                <h3>Total Movies</h3>
+                <p id="totalMovies">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Watched</h3>
+                <p id="watchedMovies">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Not Watched</h3>
+                <p id="unwatchedMovies">0</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Saved Movies</h2>
+            
+<div class="watchlist-controls">
+
+    <select id="statusFilter">
+        <option value="All">All Movies</option>
+        <option value="Watched">Watched</option>
+        <option value="Not Watched">Not Watched</option>
+    </select>
+
+    <select id="sortMovies">
+        <option value="default">Default Order</option>
+        <option value="az">Title: A to Z</option>
+        <option value="za">Title: Z to A</option>
+        <option value="shortest">Shortest First</option>
+        <option value="longest">Longest First</option>
+    </select>
+
+</div>
+
+
+            <div id="watchlistContainer">
+                <p>Your watchlist is currently empty.</p>
+            </div>
+        </section>
+
+        <section class="marathon-section">
+            <h2>Movie Marathon Calculator</h2>
+
+            <p>
+                How long it will take
+                to finish all your unwatched movies.
+            </p>
+
+            <p id="totalDuration">
+                Total Duration: 0 hours 0 minutes
+            </p>
+        </section>
+    </main>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>
